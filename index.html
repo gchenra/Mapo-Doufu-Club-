@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mapo Doufu Club</title>
+	<!-- add font style, color style -->
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		#sunimg{
+			width: 250px;
+			height: 250px;
+			position: absolute;
+			left: 40px;
+			top: 150px;
+			animation-name: rotating;
+			animation-duration: 25s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		@keyframes rotating{
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+		#dfimg1{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			top: 235px;
+			left: 111.5px;
+		}
+		#dfimg1:hover{
+			transform: rotate(-30deg);
+		}
+		.img{
+			width: 450px;
+			height: 450px;
+		}
+		#flower-img1{
+			position: absolute;
+			left: 210px;
+			top:220px;
+		}
+		#flower-img2{
+			position: absolute;
+			left: 460px;
+			top: 220px;
+		}
+		#flower-img3{
+			position: absolute;
+			left: 710px;
+			top: 220px;
+		}
+		#flower-img4{
+			position: absolute;
+			left: 960px;
+			top: 220px;
+		}
+		#grace-face{
+			width: 130px;
+			height: 130px;
+			position: absolute;
+			left: 358px;
+			top: 375px;
+			transform: rotate(-10deg);
+		}
+		#linda-face{
+			width: 160px;
+			height: 160px;
+			position: absolute;
+			left: 600px;
+			top: 355px;
+			transform: rotate(-25deg);
+		}
+		#sam-face{
+			width: 220px;
+			height: 220px;
+			position: absolute;
+			left: 817px;
+			top: 365px;
+		}
+		#susan-face{
+			width:140px;
+			height: 140px;
+			position: absolute;
+			left: 1105px;
+			top: 365px;
+		}
+		#grace-face:hover{
+			transform: rotate(-30deg);
+		}
+		#linda-face:hover{
+			transform: rotate(5deg);
+		}
+		#sam-face:hover{
+			transform: rotate(-15deg);
+		}
+		#susan-face:hover{
+			transform: rotate(20deg);
+		}
+		#grace-name{
+			color:rgba(238,197,5,1);
+			font-size: 30px;
+			font-weight: 1500;
+			position: absolute;
+			left: 400px;
+			top: 610px;
+		}
+		#linda-name{
+			color:rgba(238,197,5,1);
+			font-size: 30px;
+			font-weight: 1500;
+			position: absolute;
+			left: 650px;
+			top: 610px;
+
+		}
+		#sam-name{
+			color:rgba(238,197,5,1);
+			font-size: 30px;
+			font-weight: 1500;
+			position: absolute;
+			left:910px;
+			top: 610px;
+
+		}
+		#susan-name{
+			color:rgba(238,197,5,1);
+			font-size: 30px;
+			font-weight: 1500;
+			position: absolute;
+			left:1150px;
+			top: 610px;
+
+		}
+		.bigbox{
+			border-style: none none dotted none;
+			border-width: 5px;
+			border-color: black;
+			width: 100%;
+			text-align: center;
+			margin: 0;	
+			background-color: rgba(250, 230, 0, 0.7);
+			padding: 20px;
+			color: rgba(200,0,0,1);
+		}
+		.box{
+			border-style: solid;
+			border-color: black;
+			border-width: 5px;
+			border-radius: 10px;
+			text-align: center;
+			width: 50px;
+			margin: 20px 400px 20px 100px;
+		}
+		#buttons:hover{
+			background-color: rgba(0, 0, 100, 1);
+			font-size: 25px;
+		}
+		#buttons{
+			color: rgba(238,197,5,1);
+			background-color: rgba(200,0,0,1);
+			border-radius: 3px;
+			font-size: 20px;
+		}
+		.about-us{
+			position: relative;
+
+		}
+		#mapos{
+			position: relative;
+			left: 100px;
+		}
+		h1{
+			font-size: 40px;
+		}
+		h2{
+			font-size: 15px;
+		}
+		body{
+			background-color: #ffffcc;
+			position: relative;
+			min-height: 100%;
+		}
+		footer{
+			background-color: rgba(200,0,0,1);
+			color: rgba(238,197,5,1);
+			border-style: dotted none none none;
+			border-width: 5px;
+			border-color: black;
+			padding: 0.5em;
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+		}
+	</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="https://mapodoufu.club/img/mapodoufu.ico"/>
+</head>
+<body>
+	<header class='bigbox'> 
+		<h1>Mapo Doufu Club <br> 麻婆豆腐会</h1> <br>
+		<nav>
+			<a id="buttons" class="about-us" target="_blank" href="about-us.html"> About us </a>
+		</nav>
+	</header>
+	<article>
+		<section id="doufu">
+			<!-- <h2 class='box rbox'> Doufu <br> 豆腐</h2> -->
+			<img id="sunimg" src="https://mapodoufu.club/img/sun.png" alt="cartoon sun"> 
+			<a target="_blank" href="doufu.html"><img id="dfimg1" src="https://mapodoufu.club/img/df-headshot.png" alt="a cat's headshot"></a>
+		</section>
+		<br>
+		<section id="mapos">
+			<!-- <h2 class='box rbox'> Mapos <br> 麻婆们</h2> -->
+			<br>
+			<br>
+			<nav>
+				<img id="flower-img1" class="img" src="https://mapodoufu.club/img/flower.png" alt="a flower">
+				<h2 id="grace-name"> Grace </h2>
+				<img id="flower-img2" class="img" src="https://mapodoufu.club/img/flower.png" alt="a flower"2>
+				<h2 id="linda-name"> Linda </h2>
+				<img id="flower-img3" class="img" src="https://mapodoufu.club/img/flower.png" alt="a flower">
+				<h2 id="sam-name"> Sam </h2>
+				<img id="flower-img4" class="img" src="https://mapodoufu.club/img/flower.png" alt="a flower"> 
+				<h2 id="susan-name"> Susan </h2>
+				<a target="_blank" href="grace.html"> <img id="grace-face" src="https://mapodoufu.club/img/grace.png" alt="face of grace"> </a>
+				<a target="_blank" href="linda.html"> <img id="linda-face" src="https://mapodoufu.club/img/linda.png" alt="face of linda"> </a>
+				<a target="_blank" href="sam.html"> <img id="sam-face" src="https://mapodoufu.club/img/sam.png" alt="face of sam"> </a>
+				<a target="_blank" href="susan.html"> <img id="susan-face" src="https://mapodoufu.club/img/susan.png" alt="face of susan"> </a>
+			</nav>
+		</section>
+		<br>
+	</article>
+	<footer>&copy; 2020 MapoDoufu Club 麻婆豆腐会 </footer>
+</body>
+
+</html>
+
